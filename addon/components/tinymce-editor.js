@@ -46,12 +46,14 @@ export default Ember.Component.extend({
       let {options, editor} = this.getProperties('options', 'editor');
       let customOptions = {
         inline: true,
+        /*
         images_upload_base_path: '/some/basepath',
         automatic_uploads: false,
         images_dataimg_filter: function(img) {
           return img.hasAttribute('internal-blob');
         },
         images_upload_credentials: true,
+        */
         selector: '.editable', //selector: `#${this.get('elementId')}`,
         plugins: [
           "advlist autolink lists link image charmap print preview anchor",
@@ -68,12 +70,14 @@ export default Ember.Component.extend({
       let {options, editor} = this.getProperties('options', 'editor');
       let customOptions = {
         inline: true,
+        /*
         images_upload_base_path: '/some/basepath',
         automatic_uploads: false,
         images_dataimg_filter: function(img) {
           return img.hasAttribute('internal-blob');
         },
         images_upload_credentials: true,
+        */
         selector: '.editable2', //selector: `#${this.get('elementId')}`,
         plugins: [
           "advlist autolink lists link image charmap print preview anchor",
